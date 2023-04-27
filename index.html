@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Formularz rejestracyjny</title>
+    <meta charset="UTF-8">
+    <style>
+        #fo {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+
+        p.wyk {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="form.php" method="post">
+    <h1 id="fo1">Formularz konkursu "Podrasuj swoje buty!"</h1>
+    <p id="fo2">Chcesz zmienić swoje stare trampki na nową pare zaprojektowanych przez siebie butów Forcefield? Napisz nam dlaczego sądzisz, że powinieneś pożegnać się ze swoimi wysłużonymi butami, a być może zostaniesz jednym z laureatów konkursu!</p>
+
+    <fieldset>
+        <legend>Login</legend>
+        Imię i nazwisko
+        <input type="text" name="im" value=" " size="30"><br>
+        Adres e-mail
+        <input type="text" name="adr" value=" " size="30"><br>
+        Telefon
+        <input type="text" name="zaw" value=" " size="30"><br>
+        Moje buty są TAKIE stare...<br>
+        <textarea name="wiad" value=" " rows="7" cols="50"></textarea>
+    </fieldset>
+
+    <h2>Zaprojektuj własne trampki</h2>
+
+    <fieldset>
+        <legend>Własny projekt butów</legend>
+        <fieldset>
+            <legend>Kolor(Wybierz jeden)</legend>
+             <input type="radio" value="czerwony" name="wykszt" checked> czerwony<br>
+            <input type="radio" value="niebieski" name="wykszt"> niebieski<br>
+            <input type="radio" value="czarny" name="wykszt"> czarny<br>
+            <input type="radio" value="srebrny" name="wykszt"> srebrny<br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Opcje(Możesz wybrać kilka)</legend>
+
+            <input type="checkbox" id="opcja" name="interest[]" value="Błyszczące sznurówki" />
+            <label for="opcja">Błyszczące sznurówki</label><br>
+            <input type="checkbox" id="opcja1" name="interest[]" value="Metalowe  logo" />
+            <label for="opcja1">Metalowe  logo</label><br>
+            <input type="checkbox" id="opcja2" name="interest[]" value="Świecące podeszwy" />
+            <label for="opcja2">Świecące podeszwy</label><br>
+            <input type="checkbox" id="opcja3" name="interest[]" value="Odtwarzanie mp3" />
+            <label for="opcja3">Odtwarzanie mp3</label>
+        </fieldset>
+
+
+
+
+   <fieldset>
+       </select>
+       <legend>Rozmiar</legend>
+       <p>Rozmiar zgodny ze standarowymi numerami butów<input type="number" id="rozmiar" name="rozmiar" value="rozmiar" size="2"/></p>
+   </fieldset>
+    </fieldset>
+    <input type="submit" value="Podrasuj swoje buty" name="wyslij">&nbsp; &nbsp;
+    <input type="reset" value="Resetuj" name="zeruj">
+</form>
+</body>
+</html>

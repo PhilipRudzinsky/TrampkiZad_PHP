@@ -1,0 +1,17 @@
+*{
+    background-color: #ffe4c4;
+    color: #6a3d37;
+}
+input{
+    background-color: white;
+}
+textarea{
+    background-color: white;
+}
+body{
+    margin: auto;
+    padding: 30px;
+}
+select{
+    background-color: white;
+}
